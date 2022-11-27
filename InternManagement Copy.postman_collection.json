@@ -1,0 +1,2012 @@
+{
+	"info": {
+		"_postman_id": "b6f5822f-3160-4f36-861a-925d513e9cf1",
+		"name": "InternManagement Copy",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "7813711"
+	},
+	"item": [
+		{
+			"name": "Recruiter",
+			"item": [
+				{
+					"name": "Cv-count",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJyZWNydWl0ZXIxQGdtYWlsLmNvbSIsImV4cCI6MTY2OTYxMjcwNiwiaWF0IjoxNjY5NTc2NzA2fQ.iKcebMg4JljYknaQcwHBkq52xhk6hzTV7gQc0SkyMQxaHcT7XL0dVW2MJmwMIBeaIQVzIlPn6usZzf5Jg9FcfA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/intern-management/recruiter/cv-count",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"intern-management",
+								"recruiter",
+								"cv-count"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Rejected-Cv",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJuaXNoYUBnbWFpbC5jb20iLCJleHAiOjE2Njg2OTkwODQsImlhdCI6MTY2ODY2MzA4NH0.hlOE2FTzifcvM6hBJhKJ3dIQ-vJz8jmStEGZl3JFPWKMAjbpNTIXI_OnXCgkLi8VYwadQno18HtVhXC8axcxUA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/intern-management/recruiter/rejected-cv",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"intern-management",
+								"recruiter",
+								"rejected-cv"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "AssignBoard-Page",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJyZWNydWl0ZXIxQGdtYWlsLmNvbSIsImV4cCI6MTY2OTYxMzk0NywiaWF0IjoxNjY5NTc3OTQ3fQ.XAxCX4hbE2k7sTqV2UyRMzw7EF2wC1VRbkpcaxbt7RJh1l_cmbOXh9HXF8TyNo-2r_AF-KKZZ5vlRqeMD2l20w",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "pageNo",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "limit",
+									"value": "100",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:8080/intern-management/recruiter/assignboard",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"intern-management",
+								"recruiter",
+								"assignboard"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Assign-Organizer/ Re-assign",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJyZWNydWl0ZXIxQGdtYWlsLmNvbSIsImV4cCI6MTY2OTU4ODg4OCwiaWF0IjoxNjY5NTUyODg4fQ.LC85Cl6tfqGVFHOcPw2npymO_oxVYDVQGbWPks3bYQ3pJMTjm0d31hCE6ltPDF_8ogZstRWBd-X4NYctx2hnKw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "candidateId",
+									"value": "32",
+									"type": "text"
+								},
+								{
+									"key": "organizerEmail",
+									"value": "organizer2@gmail.com",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:8080/intern-management/recruiter/organizer-assignation",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"intern-management",
+								"recruiter",
+								"organizer-assignation"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "NotAssignedApplicants",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJyZWNydWl0ZXIxQGdtYWlsLmNvbSIsImV4cCI6MTY2OTA0MzAxMSwiaWF0IjoxNjY5MDA3MDExfQ.W3ZxB7nrJPt6bTke-P9fw6O98nn5FFTuGflYpa1XqtLn3VTX17lxGKCQu-847FwzPIGCu7BSQtTaU6vhhVhEEg",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "inviteId",
+									"value": "11",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:8080/intern-management/recruiter/applicants",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"intern-management",
+								"recruiter",
+								"applicants"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Summary",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJyZWNydWl0ZXIxQGdtYWlsLmNvbSIsImV4cCI6MTY2OTYxMjE4MCwiaWF0IjoxNjY5NTc2MTgwfQ.xlWSEU7JlBwf9OCi5EBPStYRIDqRhy39E3EilUZszYKejBHqHJI0U8WNUaZRlTXIB4fQ924uLzGevxCMaM_4Kg",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "date",
+									"value": "2022-11-28",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:8080/intern-management/recruiter/summary",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"intern-management",
+								"recruiter",
+								"summary"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Candidate-Invite",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJzaHJ1c3RpY2pja21AZ21haWwuY29tIiwiZXhwIjoxNjY4NzI0NjMyLCJpYXQiOjE2Njg2ODg2MzJ9.wZxmlajjJ7FyYWH4sqE5RSmLF23vrr040SPvk3qotaOe9xn_1CiB0RNmkk9Bp6y2-Aa2pYT2HrUdYtR3SmDVGw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "candidateName",
+									"value": "sharathkumar",
+									"type": "text"
+								},
+								{
+									"key": "designation",
+									"value": "fresher",
+									"type": "text"
+								},
+								{
+									"key": "mobileNumber",
+									"value": "9124739811",
+									"type": "text"
+								},
+								{
+									"key": "location",
+									"value": "Udupi",
+									"type": "text"
+								},
+								{
+									"key": "jobDetails",
+									"value": "Intern Job Role",
+									"type": "text"
+								},
+								{
+									"key": "candidateEmail",
+									"value": "sharathgr01@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "candidateInviteId",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:8080/intern-management/recruiter/candidate-invitation",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"intern-management",
+								"recruiter",
+								"candidate-invitation"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Organizer",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJyZWNydWl0ZXIxQGdtYWlsLmNvbSIsImV4cCI6MTY2OTYxMTE5NCwiaWF0IjoxNjY5NTc1MTk0fQ.BUH6sd6p5jOBSU-R69KMzgnJFKzT1ZXGtbKW7lEMb_WpLhdiQKxIrD2dNZd1eoYv44htJvoVPzXSLQ_rgv8Hlg",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "limit",
+									"value": "1",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:8080/intern-management/recruiter/organizers",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"intern-management",
+								"recruiter",
+								"organizers"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Available organizers",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJyZWNydWl0ZXIxQGdtYWlsLmNvbSIsImV4cCI6MTY2OTYxMTE5NCwiaWF0IjoxNjY5NTc1MTk0fQ.BUH6sd6p5jOBSU-R69KMzgnJFKzT1ZXGtbKW7lEMb_WpLhdiQKxIrD2dNZd1eoYv44htJvoVPzXSLQ_rgv8Hlg",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "localhost:8080/intern-management/recruiter/available-organizers",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"intern-management",
+								"recruiter",
+								"available-organizers"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Cv-analysis2",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJyZWNydWl0ZXIxQGdtYWlsLmNvbSIsImV4cCI6MTY2OTYxNzA2OCwiaWF0IjoxNjY5NTgxMDY4fQ.sRKrZRCgNY9hrnYXFY2u6VFP4LYjQQ-ZkK87QGeQcsC7_ufpjSzEhzeTLFivr4FdHFKvRXdDP9zFp5Edl7qe5A",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "pageNo",
+									"value": "1",
+									"type": "default"
+								},
+								{
+									"key": "limit",
+									"value": "10",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:8080/intern-management/recruiter/profiles/uiux/rejected",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"intern-management",
+								"recruiter",
+								"profiles",
+								"uiux",
+								"rejected"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Cv-analysis",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJyZWNydWl0ZXIxQGdtYWlsLmNvbSIsImV4cCI6MTY2OTYxMzQwMSwiaWF0IjoxNjY5NTc3NDAxfQ.eKPdpP1hjS-GVQQss258eA-9dhvwkvcXsoUxv_4eMgqxhkKtwi954NrmEgW8Sar9--itlBswElqz-Vac21kEzA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "date",
+									"value": "2022-11-28",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "pageNo",
+									"value": "2",
+									"type": "text"
+								},
+								{
+									"key": "limit",
+									"value": "10",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:8080/intern-management/recruiter/cv-analysis",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"intern-management",
+								"recruiter",
+								"cv-analysis"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Search-Designation",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJuaXNoYUBnbWFpbC5jb20iLCJleHAiOjE2Njg2MjAzNTcsImlhdCI6MTY2ODU4NDM1N30.7vDbFsHxOf6zX8yj4USRHbvryH59MsNLUsfEkCWRI8VCgMO69uLGhMIto3cgEeR566wMc7vumBoOQj9GDq-IwA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/intern-management/recruiter/search/java",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"intern-management",
+								"recruiter",
+								"search",
+								"java"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Top-Technologies",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJuaXNoYUBnbWFpbC5jb20iLCJleHAiOjE2Njg2MjAzNTcsImlhdCI6MTY2ODU4NDM1N30.7vDbFsHxOf6zX8yj4USRHbvryH59MsNLUsfEkCWRI8VCgMO69uLGhMIto3cgEeR566wMc7vumBoOQj9GDq-IwA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/intern-management/recruiter/top-technologies/react",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"intern-management",
+								"recruiter",
+								"top-technologies",
+								"react"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Extended-CV",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJyZWNydWl0ZXIxQGdtYWlsLmNvbSIsImV4cCI6MTY2OTYxMzk0NywiaWF0IjoxNjY5NTc3OTQ3fQ.XAxCX4hbE2k7sTqV2UyRMzw7EF2wC1VRbkpcaxbt7RJh1l_cmbOXh9HXF8TyNo-2r_AF-KKZZ5vlRqeMD2l20w",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/intern-management/recruiter/extended-cv/2",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"intern-management",
+								"recruiter",
+								"extended-cv",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Rejected-CV",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJuaXNoYUBnbWFpbC5jb20iLCJleHAiOjE2Njg2MjYyNTksImlhdCI6MTY2ODU5MDI1OX0.Ug4uacirZMJfud3oGD-rEVupaTMWtZRorSxf4H4IJs2Y5RzkEpzrUaiLloHQfuTm44QSsZPR7GLzoEfEjdH6dA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/intern-management/recruiter/rejected-cv",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"intern-management",
+								"recruiter",
+								"rejected-cv"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "profiles",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJuaXNoYUBnbWFpbC5jb20iLCJleHAiOjE2Njg2MjYyNTksImlhdCI6MTY2ODU5MDI1OX0.Ug4uacirZMJfud3oGD-rEVupaTMWtZRorSxf4H4IJs2Y5RzkEpzrUaiLloHQfuTm44QSsZPR7GLzoEfEjdH6dA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/intern-management/recruiter/profiles/java/rejected",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"intern-management",
+								"recruiter",
+								"profiles",
+								"java",
+								"rejected"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update-position-Status",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJyZWNydWl0ZXIxQGdtYWlsLmNvbSIsImV4cCI6MTY2OTYxMzk0NywiaWF0IjoxNjY5NTc3OTQ3fQ.XAxCX4hbE2k7sTqV2UyRMzw7EF2wC1VRbkpcaxbt7RJh1l_cmbOXh9HXF8TyNo-2r_AF-KKZZ5vlRqeMD2l20w",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "designation",
+									"value": "react",
+									"type": "text"
+								},
+								{
+									"key": "newStatus",
+									"value": "Closed",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:8080/intern-management/recruiter/update-position-status",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"intern-management",
+								"recruiter",
+								"update-position-status"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Resume-Url",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJuaXNoYUBnbWFpbC5jb20iLCJleHAiOjE2Njg2MjYyNTksImlhdCI6MTY2ODU5MDI1OX0.Ug4uacirZMJfud3oGD-rEVupaTMWtZRorSxf4H4IJs2Y5RzkEpzrUaiLloHQfuTm44QSsZPR7GLzoEfEjdH6dA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/intern-management/recruiter/resume-url/7",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"intern-management",
+								"recruiter",
+								"resume-url",
+								"7"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Invite-count",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJzaHJ1c3RpY2pja21AZ21haWwuY29tIiwiZXhwIjoxNjY4Njk1NDAxLCJpYXQiOjE2Njg2NTk0MDF9.G9D8XOdNx6AarEOrxuHsBFz9GIxBIUEVUklIWHjsygKgbR2ISf33oBR1PBSaCiS4kScMnP1ol_e7R0-CK90gYg",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/intern-management/recruiter/invite-info",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"intern-management",
+								"recruiter",
+								"invite-info"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Invite-by-Day",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJyYXZpM0BnbWFpbC5jb20iLCJleHAiOjE2Njg4ODYyNTgsImlhdCI6MTY2ODg1MDI1OH0.VAjO_MmSDXU75SXnEJ6zktR59luKchysjtW34UGq1cuhwqMwNS2LZbmQ-r239UFP7uS8WHKHqrSYlAA3Ksbeeg",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "date",
+									"value": "2022-11-17",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "pageNo",
+									"value": "1",
+									"type": "default"
+								},
+								{
+									"key": "limit",
+									"value": "10",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:8080/intern-management/recruiter/invites-by-day",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"intern-management",
+								"recruiter",
+								"invites-by-day"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Invite-by-Month",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJyYXZpM0BnbWFpbC5jb20iLCJleHAiOjE2Njg4ODYyNTgsImlhdCI6MTY2ODg1MDI1OH0.VAjO_MmSDXU75SXnEJ6zktR59luKchysjtW34UGq1cuhwqMwNS2LZbmQ-r239UFP7uS8WHKHqrSYlAA3Ksbeeg",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "date",
+									"value": "2022-10-17",
+									"type": "text"
+								},
+								{
+									"key": "pageNo",
+									"value": "1",
+									"type": "default"
+								},
+								{
+									"key": "limit",
+									"value": "2",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:8080/intern-management/recruiter/invites-by-month",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"intern-management",
+								"recruiter",
+								"invites-by-month"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Invite-by-Year",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJyYXZpM0BnbWFpbC5jb20iLCJleHAiOjE2Njg4ODYyNTgsImlhdCI6MTY2ODg1MDI1OH0.VAjO_MmSDXU75SXnEJ6zktR59luKchysjtW34UGq1cuhwqMwNS2LZbmQ-r239UFP7uS8WHKHqrSYlAA3Ksbeeg",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "date",
+									"value": "2021-10-17",
+									"type": "text"
+								},
+								{
+									"key": "pageNo",
+									"value": "1",
+									"type": "default"
+								},
+								{
+									"key": "limit",
+									"value": "2",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:8080/intern-management/recruiter/invites-by-year",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"intern-management",
+								"recruiter",
+								"invites-by-year"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Resent-Invite",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJwcmFzYWRoZGs5QGdtYWlsLmNvbSIsImV4cCI6MTY2ODc4MDY3MCwiaWF0IjoxNjY4NzQ0NjcwfQ.SxpkxzE1MZLf7FGUGS1lUPP7j641-SWVgw9L9IMbh53RhUGVAlQB3C57d8LWiVHFoHSlCA-egGkrmGEqlCDSQg",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "inviteId",
+									"value": "11",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:8080/intern-management/recruiter/resent-invite",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"intern-management",
+								"recruiter",
+								"resent-invite"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Available Organizers",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJwcmFzYWRoZGs5QGdtYWlsLmNvbSIsImV4cCI6MTY2OTYxMTk4NSwiaWF0IjoxNjY5NTc1OTg1fQ.QYzWjHTg_b1ScJJcS0O9FcRmGDk8xqFbZEhUTBSih-i3FT7LpLWFf6seOy7qAXE-LuLjtJPHtCUBq2TFu5C7p",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/intern-management/recruiter/available-organizers",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"intern-management",
+								"recruiter",
+								"available-organizers"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "candidate rejection",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJyZWNydWl0ZXIxQGdtYWlsLmNvbSIsImV4cCI6MTY2OTYxNzA2OCwiaWF0IjoxNjY5NTgxMDY4fQ.sRKrZRCgNY9hrnYXFY2u6VFP4LYjQQ-ZkK87QGeQcsC7_ufpjSzEhzeTLFivr4FdHFKvRXdDP9zFp5Edl7qe5A",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PATCH",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/intern-management/recruiter/candidate-rejection/41",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"intern-management",
+								"recruiter",
+								"candidate-rejection",
+								"41"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "candidate-deletion",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJyZWNydWl0ZXIxQGdtYWlsLmNvbSIsImV4cCI6MTY2OTYxNzA2OCwiaWF0IjoxNjY5NTgxMDY4fQ.sRKrZRCgNY9hrnYXFY2u6VFP4LYjQQ-ZkK87QGeQcsC7_ufpjSzEhzeTLFivr4FdHFKvRXdDP9zFp5Edl7qe5A",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PATCH",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/intern-management/recruiter/candidate-deletion/31",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"intern-management",
+								"recruiter",
+								"candidate-deletion",
+								"31"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "candidate recruitment",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJyZWNydWl0ZXIxQGdtYWlsLmNvbSIsImV4cCI6MTY2OTYxNzA2OCwiaWF0IjoxNjY5NTgxMDY4fQ.sRKrZRCgNY9hrnYXFY2u6VFP4LYjQQ-ZkK87QGeQcsC7_ufpjSzEhzeTLFivr4FdHFKvRXdDP9zFp5Edl7qe5A",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PATCH",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/intern-management/recruiter/candidate-recruitment/40",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"intern-management",
+								"recruiter",
+								"candidate-recruitment",
+								"40"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Authority",
+			"item": [
+				{
+					"name": "Assign-Recruiter",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhdXRob3JpdHlAZ21haWwuY29tIiwiZXhwIjoxNjY5NTcxODU5LCJpYXQiOjE2Njk1MzU4NTl9.BQ3CM-AJYf9Lhq_T9xVxtlAJZ4dqUgMvI0EFTuhPd7o8TvskeKbzvLJWLLp_4UzAUlKudf9XvNPaAyKyUqAfdg",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"candidateId\" : 32,\n    \"recruiterEmail\" : \"recruiter1@gmail.com\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/intern-management/authority/recruiter-assignation",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"intern-management",
+								"authority",
+								"recruiter-assignation"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "All-Applicants-NotAssigned",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhdXRob3JpdHlAZ21haWwuY29tIiwiZXhwIjoxNjY5NTgzNjI2LCJpYXQiOjE2Njk1NDc2MjZ9.dLGf_blLtmxBPWrgZbglpzo9toDuiARJ-W-Dq8Sjr0kBBQGe5qd0JMwiK_D9pbQJGb9VjYfxDH7zNR6AaUTEAw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/intern-management/authority/applicants",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"intern-management",
+								"authority",
+								"applicants"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Available recruiters",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhdXRob3JpdHlAZ21haWwuY29tIiwiZXhwIjoxNjY5NTgzNjI2LCJpYXQiOjE2Njk1NDc2MjZ9.dLGf_blLtmxBPWrgZbglpzo9toDuiARJ-W-Dq8Sjr0kBBQGe5qd0JMwiK_D9pbQJGb9VjYfxDH7zNR6AaUTEAw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/intern-management/authority/available-recruiters",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"intern-management",
+								"authority",
+								"available-recruiters"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "New technology",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhdXRob3JpdHlAZ21haWwuY29tIiwiZXhwIjoxNjY5MTI5OTEyLCJpYXQiOjE2NjkwOTM5MTJ9.ae-WlF4or1KX8_5RsaB93saFrLOgYiDeb6SgfepF9wftw9D9IGJhW9aa9Ze5jwVtofs2M2yZ5_2MGaXEJJ5NvA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"designation\" : \"java\",\r\n    \"locations\" : {\r\n        \"Udupi\" : 5,\r\n        \"Bangalore\" : 3,\r\n        \"Mumbai\" : 2\r\n    }\r\n\r\n    \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/intern-management/authority/new-technology",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"intern-management",
+								"authority",
+								"new-technology"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Organizer",
+			"item": [
+				{
+					"name": "Take-Interview",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJvcmdhbml6ZXIxQGdtYWlsLmNvbSIsImV4cCI6MTY2OTU5NDYyMSwiaWF0IjoxNjY5NTU4NjIxfQ.R1TPgmyy0IEzoA1aohCggTaXmmYuunMxx8RLkWVPcdCNP4UWv7TExWf8l4bItnTTTrn7iXkJSqMQiKoyOz8_8Q",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "candidateId",
+									"value": "78",
+									"type": "text"
+								},
+								{
+									"key": "organizerEmail",
+									"value": "organizer1@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "status",
+									"value": "Shortlisted",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:8080/intern-management/organizer/interview",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"intern-management",
+								"organizer",
+								"interview"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "member-credentials",
+			"item": [
+				{
+					"name": "OTP-Verification",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "emailId",
+									"value": "prasadhk9@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "otp",
+									"value": "5689",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:8080/intern-management/member-credentials/otp-verification",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"intern-management",
+								"member-credentials",
+								"otp-verification"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Password-Update",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "emailId",
+									"value": "prasadhdk9@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "kiran",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:8080/intern-management/member-credentials/password-update",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"intern-management",
+								"member-credentials",
+								"password-update"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Authority-Login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "emailId",
+									"value": "ravi3@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "mobileNumber",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "photo",
+									"type": "file",
+									"src": [],
+									"disabled": true
+								},
+								{
+									"key": "designation",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "position",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "password",
+									"value": "ravi3",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:8080/intern-management/member-credentials/login",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"intern-management",
+								"member-credentials",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Organizer login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"emailId\" : \"organizer1@gmail.com\",\n    \"password\" : \"organizer1\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/intern-management/member-credentials/login",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"intern-management",
+								"member-credentials",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Recruiter login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"emailId\" : \"recruiter1@gmail.com\",\n    \"password\" : \"recruiter1\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/intern-management/member-credentials/login",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"intern-management",
+								"member-credentials",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Member-Register",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "Kiran",
+									"type": "text"
+								},
+								{
+									"key": "emailId",
+									"value": "prasadhdk9@gmail.com",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "mobileNumber",
+									"value": "7899827980",
+									"type": "text"
+								},
+								{
+									"key": "photo",
+									"type": "file",
+									"src": []
+								},
+								{
+									"key": "designation",
+									"value": "senior",
+									"type": "text"
+								},
+								{
+									"key": "position",
+									"value": "Recruiter",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "kiran123",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:8080/intern-management/member-credentials/register",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"intern-management",
+								"member-credentials",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "send otp",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "toEmail",
+									"value": "prasadhdk9@gmail.com",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:8080/intern-management/member-credentials/otp",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"intern-management",
+								"member-credentials",
+								"otp"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Member",
+			"item": [
+				{
+					"name": "Notifications",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhdXRob3JpdHlAZ21haWwuY29tIiwiZXhwIjoxNjY5NTgzNjI2LCJpYXQiOjE2Njk1NDc2MjZ9.dLGf_blLtmxBPWrgZbglpzo9toDuiARJ-W-Dq8Sjr0kBBQGe5qd0JMwiK_D9pbQJGb9VjYfxDH7zNR6AaUTEAw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "pageNo",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "limit",
+									"value": "10",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:8080/intern-management/member/notifications",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"intern-management",
+								"member",
+								"notifications"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create event",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhdXRob3JpdHlAZ21haWwuY29tIiwiZXhwIjoxNjY5NTgzNjI2LCJpYXQiOjE2Njk1NDc2MjZ9.dLGf_blLtmxBPWrgZbglpzo9toDuiARJ-W-Dq8Sjr0kBBQGe5qd0JMwiK_D9pbQJGb9VjYfxDH7zNR6AaUTEAw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "title",
+									"value": "Nitte Campus",
+									"type": "default"
+								},
+								{
+									"key": "venue",
+									"value": "NMAMIT",
+									"type": "default"
+								},
+								{
+									"key": "location",
+									"value": "Nitte, Karkala",
+									"type": "default"
+								},
+								{
+									"key": "date",
+									"value": "2022-12-03",
+									"type": "default"
+								},
+								{
+									"key": "time",
+									"value": "10",
+									"type": "default"
+								},
+								{
+									"key": "period",
+									"value": "AM",
+									"type": "default"
+								},
+								{
+									"key": "description",
+									"value": "Not null",
+									"type": "default"
+								},
+								{
+									"key": "invitedEmails[0]",
+									"value": "virat@gmail.com",
+									"type": "default"
+								},
+								{
+									"key": "invitedEmails[1]",
+									"value": "default@gmail.com",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:8080/intern-management/member/event-creation",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"intern-management",
+								"member",
+								"event-creation"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "React to event invite",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/intern-management/member/event-status-update",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"intern-management",
+								"member",
+								"event-status-update"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Notification display",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJyZWNydWl0ZXIxQGdtYWlsLmNvbSIsImV4cCI6MTY2OTA0OTEzMCwiaWF0IjoxNjY5MDEzMTMwfQ.mRngSPalcEjgGYrOUNgJBZ1nqVfBFCzNF5NP_C6YEapNcy7VXoRMBvUR0iIaaX45j1yr1puGJYO5VE4D9zG5tg",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/intern-management/member/notification-display",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"intern-management",
+								"member",
+								"notification-display"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Logged-Profile",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJyZWNydWl0ZXIxQGdtYWlsLmNvbSIsImV4cCI6MTY2OTU4ODg4OCwiaWF0IjoxNjY5NTUyODg4fQ.LC85Cl6tfqGVFHOcPw2npymO_oxVYDVQGbWPks3bYQ3pJMTjm0d31hCE6ltPDF_8ogZstRWBd-X4NYctx2hnKw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/intern-management/member/logged-profile",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"intern-management",
+								"member",
+								"logged-profile"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Fetch document",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Candidate-Register",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "Udith2",
+							"type": "text"
+						},
+						{
+							"key": "dob",
+							"value": "2000-06-23",
+							"type": "text"
+						},
+						{
+							"key": "mobileNumber",
+							"value": "7892827987",
+							"type": "text"
+						},
+						{
+							"key": "emailId",
+							"value": "udith2@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "jobLocation",
+							"value": "Bangalore",
+							"type": "text"
+						},
+						{
+							"key": "gender",
+							"value": "male",
+							"type": "text"
+						},
+						{
+							"key": "position",
+							"value": "uiux",
+							"type": "text"
+						},
+						{
+							"key": "expYear",
+							"value": "2",
+							"type": "text"
+						},
+						{
+							"key": "expMonth",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "candidateType",
+							"value": "Refferal",
+							"type": "text"
+						},
+						{
+							"key": "contactPerson",
+							"value": "Ramesh",
+							"type": "text"
+						},
+						{
+							"key": "languagesKnown",
+							"value": "English,Hindi",
+							"type": "text"
+						},
+						{
+							"key": "workHistories[0].company",
+							"value": "TCS",
+							"type": "text"
+						},
+						{
+							"key": "workHistories[0].position",
+							"value": "SED",
+							"type": "text"
+						},
+						{
+							"key": "workHistories[0].fromDate",
+							"value": "2015-11-01",
+							"type": "text"
+						},
+						{
+							"key": "workHistories[0].toDate",
+							"value": "2017-09-10",
+							"type": "text"
+						},
+						{
+							"key": "workHistories[0].location",
+							"value": "Bangalore",
+							"type": "text"
+						},
+						{
+							"key": "educations[0].institution",
+							"value": "xxx",
+							"type": "text"
+						},
+						{
+							"key": "educations[0].grade",
+							"value": "A",
+							"type": "text"
+						},
+						{
+							"key": "educations[0].fromDate",
+							"value": "2009-08-08",
+							"type": "text"
+						},
+						{
+							"key": "educations[0].toDate",
+							"value": "2011-12-02",
+							"type": "text"
+						},
+						{
+							"key": "educations[0].location",
+							"value": "Mysuru",
+							"type": "text"
+						},
+						{
+							"key": "address.content",
+							"value": "Behind udupi bus-stand,Udupi",
+							"type": "text"
+						},
+						{
+							"key": "address.state",
+							"value": "Karnataka",
+							"type": "text"
+						},
+						{
+							"key": "address.pinCode",
+							"value": "516240",
+							"type": "text"
+						},
+						{
+							"key": "softwareWorked",
+							"value": "yyy.lll",
+							"type": "text"
+						},
+						{
+							"key": "skills",
+							"value": "aaa,ppp",
+							"type": "text"
+						},
+						{
+							"key": "about",
+							"value": "Senior Web Developer specializing in front end development. Experienced with all stages of the development cycle for dynamic web projects.",
+							"type": "text"
+						},
+						{
+							"key": "links[0].url",
+							"value": "www.jdgejgejkfg",
+							"type": "text"
+						},
+						{
+							"key": "links[0].website",
+							"value": "linkedIn",
+							"type": "text"
+						},
+						{
+							"key": "links[1].url",
+							"value": "www.ydgehjdfeuy",
+							"type": "text"
+						},
+						{
+							"key": "links[1].website",
+							"value": "skype",
+							"type": "text"
+						},
+						{
+							"key": "currentCTC",
+							"value": "5.5",
+							"type": "text"
+						},
+						{
+							"key": "expectedCTC",
+							"value": "8",
+							"type": "text"
+						},
+						{
+							"key": "attachment",
+							"type": "file",
+							"src": "/Users/preethammnayak/Downloads/sample.pdf"
+						},
+						{
+							"key": "photo",
+							"type": "file",
+							"src": "/Users/preethammnayak/Downloads/child.jpg"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:8080/intern-management/candidate/register",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"intern-management",
+						"candidate",
+						"register"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
